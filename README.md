@@ -30,5 +30,5 @@ My work centers on **minimalist and modern aesthetics**. I specialize in:
 * **Email:** [nasirtajudin41@gmail.com]
 * **GitHub:** [@nasirtajudin](https://github.com/nasirtajudin)
 
-* ​⚖️ License & Copyright
-​This project is All Rights Reserved. The code and design assets belong to NGraphics. You may view the code for educational purposes, but copying or redistributing any part of this project is prohibited.
+## ​⚖️ License & Copyright
+​This project is All Rights Reserved. The code and design assets belong to Nasir Tajudin. You may view the code for educational purposes, but copying or redistributing any part of this project is prohibited.
