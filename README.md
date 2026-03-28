@@ -1,6 +1,6 @@
-# Portfolio | NGraphics
+# Portfolio | Nasir Tajudin
 
-Welcome to my professional portfolio! This repository contains the source code for my personal website, showcasing my work in app development, photography, and UI/UX development.
+Welcome to my professional portfolio! This repository contains the source code for my personal website, showcasing my work in app development, photography, UI/UX development, and my story.
 
 ## 🚀 Live Demo
 You can view the live site here: **[www.nasirtajudin.me]**
