@@ -17,7 +17,7 @@ My work centers on **minimalist and modern aesthetics**. I specialize in:
 * **Frontend:** HTML5, CSS3, JavaScript
 * **Deployment:** GitHub Pages
 * **Domain:** Namecheap (via GitHub Student Developer Pack)
-* **Design Tools:** Adobe Suite / Figma
+
 
 ---
 
