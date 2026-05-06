@@ -3,7 +3,7 @@
 Welcome to my professional portfolio! This repository contains the source code for my personal website, showcasing my work in app development, photography, UI/UX development, and my story.
 
 ## 🚀 Live Demo
-You can view the live site here: **[https//nasirtajudin.me]**
+You can view the live site here: **[https//:nasirtajudin.me]**
 
 ---
 
