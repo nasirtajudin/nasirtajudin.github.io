@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nasirtajudin.me
+Sitemap: https://nasirtajudin.me/sitemap.xml

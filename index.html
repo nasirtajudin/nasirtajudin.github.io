@@ -6,8 +6,19 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Nasir Tajudin",
-  "jobTitle": ["Frontend Developer", "Flutter Mobile App Developer", "Poet"],
+  "url": "https://nasirtajudin.me/",
+  "image": "https://nasirtajudin.me/profile.png",
+  "email": "nasirtajudin41@gmail.com",
+  "jobTitle": ["Front-end Developer", "Flutter Mobile App Developer", "Poet"],
   "description": "Founder and CEO of AJABNA. Self-taught developer with a background in Social Science. Developer of the EDUN educational app.",
+  "sameAs": [
+    "https://www.linkedin.com/in/nasir-tajudin",
+    "https://x.com/nasirtajudin12",
+    "https://www.instagram.com/nasirtajudin1",
+    "https://www.facebook.com/nasir.tajudin12",
+    "https://www.tiktok.com/@nasir_tajudin",
+    "https://t.me/nasir_tajudin"
+  ],
   "affiliation": [
     {
       "@type": "CollegeOrUniversity",
@@ -16,15 +27,15 @@
     {
       "@type": "Organization",
       "name": "AJABNA",
-      "role": "Founder and CEO"
+      "roleName": "Founder and CEO"
     }
   ],
   "knowsAbout": [
-    "Frontend Development", 
-    "Flutter", 
-    "Mobile App Development", 
-    "Educational Technology", 
-    "Poetry", 
+    "Frontend Development",
+    "Flutter",
+    "Mobile App Development",
+    "Educational Technology",
+    "Poetry",
     "Social Science"
   ],
   "alumniOf": {
@@ -36,12 +47,39 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Nasir Tajudin — Front-end Developer & Student" />
-  <title>Nasir Tajudin | About</title>
+  <meta name="description" content="Nasir Tajudin — Front-end Developer, Flutter Mobile App Developer &amp; Founder of AJABNA. Building elegant, high-performance digital experiences." />
+  <meta name="author" content="Nasir Tajudin" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#E8B86D" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#B85F08" media="(prefers-color-scheme: light)" />
+  <title>Nasir Tajudin | Front-end Developer &amp; Flutter Engineer</title>
 
+  <link rel="canonical" href="https://nasirtajudin.me/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nasirtajudin.me/" />
+  <meta property="og:title" content="Nasir Tajudin | Front-end Developer &amp; Flutter Engineer" />
+  <meta property="og:description" content="Nasir Tajudin — Front-end Developer, Flutter Mobile App Developer &amp; Founder of AJABNA. Building elegant, high-performance digital experiences." />
+  <meta property="og:image" content="https://nasirtajudin.me/profile.png" />
+  <meta property="og:image:alt" content="Nasir Tajudin" />
+  <meta property="og:site_name" content="Nasir Tajudin" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@nasirtajudin12" />
+  <meta name="twitter:creator" content="@nasirtajudin12" />
+  <meta name="twitter:title" content="Nasir Tajudin | Front-end Developer &amp; Flutter Engineer" />
+  <meta name="twitter:description" content="Front-end Developer, Flutter Mobile App Developer &amp; Founder of AJABNA. Building elegant, high-performance digital experiences." />
+  <meta name="twitter:image" content="https://nasirtajudin.me/profile.png" />
+
+  <!-- Fonts: preconnect first, then load non-blocking -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" />
+  <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" /></noscript>
 
   <style>
     /* ================================================================
@@ -169,6 +207,7 @@
       background:transparent;
       transition:background var(--tn),backdrop-filter var(--tn),border-color var(--tn),transform 0.3s ease;
       border-bottom:1px solid transparent;
+      will-change:transform;
     }
     nav.nav-hidden {
       transform: translateY(-100%);
@@ -249,7 +288,7 @@
        CONTAINER & SECTION BASE
     ================================================================ */
     .C{max-width:var(--cmax);margin:0 auto;padding:0 var(--cpx)}
-    section{padding:var(--sp) 0;position:relative;overflow:hidden}
+    section{padding:var(--sp) 0;position:relative;overflow:hidden;contain:layout style}
     .s-lbl{
       font-family:var(--font-m);font-size:10px;
       letter-spacing:.32em;text-transform:uppercase;
@@ -268,10 +307,19 @@
     /* ================================================================
        REVEAL ANIMATIONS
     ================================================================ */
-    .rv{opacity:0;transform:translateY(42px);transition:opacity .85s cubic-bezier(.4,0,.2,1),transform .85s cubic-bezier(.4,0,.2,1)}
+    .rv{opacity:0;transform:translateY(42px);transition:opacity .85s cubic-bezier(.4,0,.2,1),transform .85s cubic-bezier(.4,0,.2,1);will-change:opacity,transform}
     .rv.on{opacity:1;transform:translateY(0)}
     .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
     .d4{transition-delay:.4s}.d5{transition-delay:.5s}.d6{transition-delay:.6s}
+
+    @media(prefers-reduced-motion:reduce){
+      .rv{opacity:1;transform:none;transition:none}
+      .rv.on{opacity:1;transform:none}
+      .h-greet,.h-name,.h-title-row,.h-tag,.h-cta,.h-stats,.h-scroll{animation:none;opacity:1;transform:none}
+      .sk-fill{transition:none}
+      .h-scroll-l{animation:none}
+      .swipe-wrapper{transition:none}
+    }
 
     /* ================================================================
        HERO
@@ -534,6 +582,7 @@
       background:linear-gradient(90deg,var(--a),var(--b));
       width:0%;transition:width 1.3s cubic-bezier(.4,0,.2,1);
       position:relative;
+      will-change:width;
     }
     .sk-fill::after{
       content:'';position:absolute;
@@ -745,6 +794,10 @@
       .pr-hdr{flex-direction:column;align-items:flex-start}
       .ab-skills{grid-template-columns:1fr}
       .ft-inner{flex-direction:column;text-align:center}
+      /* Larger touch targets on mobile */
+      .n-link{padding:10px 4px;min-height:44px;display:inline-flex;align-items:center}
+      .soc{min-height:44px}
+      .btn-p,.btn-s{min-height:48px}
     }
     @media(max-width:480px){
       .h-cta{flex-direction:column}
@@ -829,7 +882,7 @@
 
       <div class="rv">
         <div class="ab-frame">
-          <img src="profile.png" alt="About Image" style="width: 100%; height: 100%; object-fit: cover; position: relative; z-index: 2;" />
+          <img src="profile.png" alt="Nasir Tajudin — Front-end Developer and Flutter Engineer" width="370" height="617" style="width: 100%; height: 100%; object-fit: cover; position: relative; z-index: 2;" />
         </div>
       </div>
 
@@ -872,7 +925,7 @@
     <div class="pr-grid">
     <div class="pr-card rv d1" data-tilt>
         <div class="pr-n">01</div>
-        <img src="project1.png" alt="Project 1" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 20px; border: 1px solid var(--border);" />
+        <img src="project1.png" alt="AJABNA — cross-platform application portfolio" width="600" height="200" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 20px; border: 1px solid var(--border);" />
        <div class="pr-tags"><span class="pr-tag">NEDU</span><span class="pr-tag"></span></div>
         <h3 class="pr-ttl">AJABNA</h3>
         <p class="pr-desc">
@@ -882,7 +935,7 @@
 
       <div class="pr-card rv d2" data-tilt>
         <div class="pr-n">02</div>
-        <img src="YOUR_PROJECT_IMAGE_3_LINK_HERE.jpg" alt="Project 2" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 20px; border: 1px solid var(--border);" />
+        <img src="YOUR_PROJECT_IMAGE_3_LINK_HERE.jpg" alt="Orbit Design System — accessible component library" width="600" height="200" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 20px; border: 1px solid var(--border);" />
         <div class="pr-tags"><span class="pr-tag">Next.js</span><span class="pr-tag">TypeScript</span></div>
         <h3 class="pr-ttl">Orbit Design System</h3>
         <p class="pr-desc">A comprehensive component library with 80+ accessible, themeable components and full TypeScript support. Currently powering 5+ production applications in the wild.</p>
@@ -891,16 +944,16 @@
 
       <div class="pr-card rv d3" data-tilt>
         <div class="pr-n">03</div>
-        <img src="YOUR_PROJECT_IMAGE_4_LINK_HERE.jpg" alt="Project 3" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 20px; border: 1px solid var(--border);" />
+        <img src="YOUR_PROJECT_IMAGE_4_LINK_HERE.jpg" alt="Nexus Analytics Dashboard — 3D real-time data visualization" width="600" height="200" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 20px; border: 1px solid var(--border);" />
         <div class="pr-tags"><span class="pr-tag">WebGL</span><span class="pr-tag">Three.js</span></div>
         <h3 class="pr-ttl">Nexus Analytics Dashboard</h3>
         <p class="pr-desc">Real-time enterprise data visualization with 3D WebGL charts, live streaming, and interactive geospatial analytics — deployed to 3 Fortune 500 companies.</p>
         <a href="https://facebook.com" class="btn-s btn-color" style="width: 100%; justify-content: center; margin-top: 15px;">Go to here</a>
       </div>
-     
-    <div class="pr-card rv d3" data-tilt>
+
+      <div class="pr-card rv d3" data-tilt>
         <div class="pr-n">04</div>
-        <img src="YOUR_PROJECT_IMAGE_4_LINK_HERE.jpg" alt="Project 4" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 20px; border: 1px solid var(--border);" />
+        <img src="YOUR_PROJECT_IMAGE_4_LINK_HERE.jpg" alt="Nexus Analytics Dashboard — enterprise geospatial analytics" width="600" height="200" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 20px; border: 1px solid var(--border);" />
         <div class="pr-tags"><span class="pr-tag">WebGL</span><span class="pr-tag">Three.js</span></div>
         <h3 class="pr-ttl">Nexus Analytics Dashboard</h3>
         <p class="pr-desc">Real-time enterprise data visualization with 3D WebGL charts, live streaming, and interactive geospatial analytics — deployed to 3 Fortune 500 companies.</p>
@@ -1205,12 +1258,26 @@ function initParticles() {
   const ctx = cv.getContext('2d');
   let pts = [];
   let cmx = null, cmy = null;
-  const N = 75, CDIST = 145, MRAD = 160;
+  let rafId = null;
+  let visible = true;
+
+  // Reduce particle count on mobile/low-power devices
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isMobile = window.matchMedia('(max-width: 768px)').matches;
+  const N = prefersReduced ? 0 : (isMobile ? 35 : 75);
+  const CDIST = 145, MRAD = 160;
 
   const resize = () => { cv.width = innerWidth; cv.height = innerHeight; };
   resize();
-  window.addEventListener('resize', resize);
-  document.addEventListener('mousemove', e => { cmx = e.clientX; cmy = e.clientY; });
+  window.addEventListener('resize', resize, { passive: true });
+  document.addEventListener('mousemove', e => { cmx = e.clientX; cmy = e.clientY; }, { passive: true });
+
+  // Pause when hero is off-screen
+  const heroObs = new IntersectionObserver(entries => {
+    visible = entries[0].isIntersecting;
+    if (visible && !rafId) draw();
+  }, { threshold: 0 });
+  heroObs.observe(cv.closest('section') || cv.parentElement);
 
   class P {
     constructor() {
@@ -1252,6 +1319,7 @@ function initParticles() {
   for (let i = 0; i < N; i++) pts.push(new P());
 
   function draw() {
+    if (!visible) { rafId = null; return; }
     ctx.clearRect(0, 0, cv.width, cv.height);
     const dark = html.getAttribute('data-theme') === 'dark';
     const col = dark ? '232,184,109' : '184,95,8';
@@ -1270,7 +1338,7 @@ function initParticles() {
       }
     }
     pts.forEach(p => { p.update(); p.draw(); });
-    requestAnimationFrame(draw);
+    rafId = requestAnimationFrame(draw);
   }
   draw();
 }
